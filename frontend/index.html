@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Title Tag -->
+    <title>Accessibility Analyzer - WCAG 2.2 Inspection Lab</title>
+    
+    <!-- Meta Description -->
+    <meta name="description" content="Accessibility Analyzer is a developer-focused web accessibility (WCAG 2.2 AA) and SEO inspection tool that parses public web pages for accessibility issues and SEO best practices." />
+    
+    <!-- Canonical Tag & Hreflang -->
+    <link rel="canonical" href="https://accessibility-analyzer-i6h5.vercel.app/" />
+    <link rel="alternate" hreflang="en" href="https://accessibility-analyzer-i6h5.vercel.app/" />
+    
+    <!-- Open Graph Social Metadata -->
+    <meta property="og:title" content="Accessibility Analyzer - WCAG 2.2 Inspection Lab" />
+    <meta property="og:description" content="Developer-focused web accessibility (WCAG 2.2 AA) and SEO inspection engine with plain-English fix suggestions." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://accessibility-analyzer-i6h5.vercel.app/" />
+    
+    <!-- Theme Anti-Flash Script -->
+    <script>
+      (function() {
+        try {
+          var saved = localStorage.getItem('app-theme');
+          var isLight = saved === 'light' || (!saved && window.matchMedia('(prefers-color-scheme: light)').matches);
+          if (isLight) {
+            document.documentElement.classList.remove('dark');
+            document.documentElement.classList.add('light');
+            document.documentElement.setAttribute('data-theme', 'light');
+          } else {
+            document.documentElement.classList.add('dark');
+            document.documentElement.classList.remove('light');
+            document.documentElement.setAttribute('data-theme', 'dark');
+          }
+        } catch (e) {}
+      })();
+    </script>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    
+    <!-- Focus ring styles for WCAG 2.4.7 -->
+    <style>
+      a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible {
+        outline: 2px solid var(--focus) !important;
+        outline-offset: 2px !important;
+      }
+      .sr-only {
+        position: absolute !important;
+        width: 1px !important;
+        height: 1px !important;
+        padding: 0 !important;
+        margin: -1px !important;
+        overflow: hidden !important;
+        clip: rect(0, 0, 0, 0) !important;
+        white-space: nowrap !important;
+        border-width: 0 !important;
+      }
+    </style>
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Accessibility Analyzer",
+      "url": "https://accessibility-analyzer-i6h5.vercel.app/",
+      "description": "Developer-focused web accessibility (WCAG 2.2 AA) and SEO inspection tool.",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "All"
+    }
+    </script>
+  </head>
+  <body>
+    <!-- Skip to main content link -->
+    <a href="#main" class="sr-only focus:not-sr-only bg-[#FFB800] text-black font-bold p-2 z-50 fixed top-2 left-2 rounded">Skip to main content</a>
+    
+    <div id="root"></div>
+
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
