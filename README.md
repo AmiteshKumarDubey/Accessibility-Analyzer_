@@ -103,8 +103,8 @@ ACCESSIBILITY-ANALYZER/
 ### 1. Clone repository
 
 ```bash
-git clone https://github.com/AmiteshKumarDubey/ACCESSIBILITY-ANALYZER.git
-cd ACCESSIBILITY-ANALYZER
+git clone https://github.com/AmiteshKumarDubey/Accessibility-Analyzer_.git
+cd Accessibility-Analyzer_
 ```
 
 ### 2. Install dependencies
